@@ -22,15 +22,6 @@ Create munix streams for an event based on sun.tidalcycles.org
 Use --help to see the help.
 """)
 
-#curl -s \
-#    -H "Authorization: Api-Key 3aTeUHXw.fXuvEZE4Yb3KCDpAZInu2fDKgpEpuE39" \
-#    -H "Content-Type: application/json" \
-#    -X POST \
-#    -d '{ "event": "https://muxy.tidalcycles.org/events/3/", "starts_at": "2020-12-09T03:00:00", "ends_at": "2020-12-09T03:20:00", "publisher_name": "mrreason", "key": "SHD729" }' \
-#    http://muxy.tidalcycles.org/streams/
-
-# {'event': 'http://muxy.tidalcycles.org/events/3/', 'starts_at': '2020-12-20T14:40:00', 'ends_at': '2020-12-20T15:00:00', 'publisher_name': 'mrreason', 'key': 'SHD729'}
-
 for opt, arg in options:
     if opt in ('-a', '--apiKey'):
         apiKey = arg
